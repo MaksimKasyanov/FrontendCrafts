@@ -1,0 +1,17 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../out-tsc/app",
+    "types": ["node"] // Для поддержки Node.js типов
+  },
+  "files": [
+    "src/main.ts",          // Основной файл приложения
+    "src/main.server.ts",   // Файл для серверного рендеринга
+    "server.ts"             // Серверный файл (SSR)
+  ],
+  "include": [
+    "src/**/*.d.ts",        // Типы деклараций
+    "src/**/*.ts"           // Все файлы TypeScript в src/
+  ]
+}
