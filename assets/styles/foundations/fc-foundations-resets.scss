@@ -1,0 +1,135 @@
+@import "../mixins/fc-mixins-breakpoints";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+
+h1{
+  font-size: var(--font-size-800);
+  font-weight: var(--d-font-weight-900);
+  line-height: var(--d-line-height-800);
+  @include respond-to(md) {
+    font-size: var(--font-size-700);
+    font-weight: var(--d-font-weight-900);
+    line-height: var(--d-line-height-700);
+  }
+  @include respond-to(sm) {
+    font-size: var(--font-size-600);
+    font-weight: var(--d-font-weight-900);
+    line-height: var(--d-line-height-600);
+  }
+}
+
+h2{
+  font-size: var(--font-size-700);
+  font-weight: var(--d-font-weight-900);
+  line-height: var(--d-line-height-700);
+}
+
+h3{
+  font-size: var(--font-size-600);
+  font-weight: var(--d-font-weight-900);
+  line-height: var(--d-line-height-700);
+}
+
+h4{
+  font-size: var(--font-size-500);
+  font-weight: var(--d-font-weight-900);
+  line-height: var(--d-line-height-700);
+}
+
+h5{
+  font-size: var(--font-size-400);
+  font-weight: var(--d-font-weight-900);
+  line-height: var(--d-line-height-700);
+}
+
+h6{
+  font-size: var(--font-size-300);
+  font-weight: var(--d-font-weight-900);
+  line-height: var(--d-line-height-700);
+}
+
+p{
+
+}
+
+span{
+
+}
+
+button{
+  all: unset;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+dl {
+  margin: 0;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+i, em {
+  font-style: italic;
+}
+
+mark {
+  background-color: transparent;
+  color: inherit;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}

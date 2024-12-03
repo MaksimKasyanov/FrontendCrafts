@@ -1,0 +1,36 @@
+@mixin generate-light-theme-text($namespace: null, $default, $muted-amount: 20%, $accent) {
+  $prefix: if($namespace, "#{$namespace}-", "");
+
+  :root {
+    --#{$prefix}light-color-text-default: #{$default};
+    --#{$prefix}light-color-text-muted: #{darken($default, $muted-amount)};
+    --#{$prefix}light-color-text-accent: #{$accent};
+  }
+}
+@mixin generate-dark-theme-text($namespace: null, $default, $muted-amount: 20%, $accent) {
+  $prefix: if($namespace, "#{$namespace}-", "");
+
+  :root {
+    --#{$prefix}dark-color-text-default: #{$default};
+    --#{$prefix}dark-color-text-muted: #{lighten($default, $muted-amount)};
+    --#{$prefix}dark-color-text-accent: #{$accent};
+  }
+}
+@mixin generate-light-theme-backgrounds($namespace: null, $primary, $secondary, $accent) {
+  $prefix: if($namespace, "#{$namespace}-", ""); // Префикс для уникальности
+
+  :root {
+    --#{$prefix}light-bg-primary: #{$primary};
+    --#{$prefix}light-bg-secondary: #{$secondary};
+    --#{$prefix}light-bg-accent: #{$accent};
+  }
+}
+@mixin generate-dark-theme-backgrounds($namespace: null, $primary, $secondary, $accent) {
+  $prefix: if($namespace, "#{$namespace}-", ""); // Префикс для уникальности
+
+  :root {
+    --#{$prefix}dark-bg-primary: #{$primary};
+    --#{$prefix}dark-bg-secondary: #{$secondary};
+    --#{$prefix}dark-bg-accent: #{$accent};
+  }
+}

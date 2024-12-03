@@ -1,0 +1,15 @@
+/* Sizes */
+@mixin generate-sizes($base-size, $start: 1, $max, $step: 1) {
+  $i: $start;
+  @while $i <= $max {
+    --size-#{$i}: calc(#{$base-size} * #{$i});
+    $i: $i + $step;
+  }
+}
+
+:root {
+  @include generate-sizes(0.0625rem, 1, 32, 1);
+  @include generate-sizes(0.0625rem, 36, 64, 4);
+  @include generate-sizes(0.0625rem, 72, 96, 8);
+  @include generate-sizes(0.0625rem, 120, 640, 40);
+}

@@ -1,0 +1,21 @@
+
+/* Color Scheme */
+:host.light-theme {
+  --color-background-default: var(--app-light-bg-secondary);
+  --color-text-default: var(--app-light-color-text-default);
+  --color-text-muted: var(--app-light-color-text-muted);
+  --color-text-accent: var(--app-light-color-text-accent);
+}
+
+:host.dark-theme {
+  --color-background: #1a202c;
+  --color-text-default: var(--app-dark-color-text-default);
+  --color-text-muted: var(--app-dark-color-text-muted);
+  --color-text-accent: var(--app-dark-color-text-accent);
+}
+
+h1{
+  color: var(--app-dark-color-text-accent);
+}
+
+

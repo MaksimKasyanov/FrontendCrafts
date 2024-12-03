@@ -1,11 +1,94 @@
-<nav>
-  <a routerLink="/documentation" routerLinkActive="active">Documentation</a>
-  <a routerLink="/nucleus" routerLinkActive="active">Nucleus</a>
-  <a routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
-  <a routerLink="/shop" routerLinkActive="active">Shop</a>
-  <a routerLink="/recipes" routerLinkActive="active">Recipes</a>
-</nav>
+<aside class="aside">
+<!--  <nav class="navigation">-->
+<!--    <a routerLink="/documentation" routerLinkActive="active">Documentation</a>-->
+<!--    <a routerLink="/nucleus" routerLinkActive="active">Nucleus</a>-->
+<!--    <a routerLink="/portfolio" routerLinkActive="active">Portfolio</a>-->
+<!--    <a routerLink="/shop" routerLinkActive="active">Shop</a>-->
+<!--    <a routerLink="/recipes" routerLinkActive="active">Recipes</a>-->
+<!--  </nav>-->
+  <nav>
+    <ul>
+      <li>
+        <div class="menu-item" (click)="toggleMenu($event)">
+          Documentation
+        </div>
+        <ul>
+          <li>
+            <div class="menu-item" (click)="toggleMenu($event)">
+              Introduction
+            </div>
+          </li>
+          <li>
+            <div class="menu-item" (click)="toggleMenu($event)">
+              Setup
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <div class="menu-item" (click)="toggleMenu($event)">
+          Nucleus
+        </div>
+        <ul>
+          <li>
+            <div class="menu-item" (click)="toggleMenu($event)">
+              Core
+            </div>
+          </li>
+          <li>
+            <div class="menu-item" (click)="toggleMenu($event)">
+              Advanced
+            </div>
+            <ul>
+              <li>
+                <div class="menu-item" (click)="toggleMenu($event)">
+                  Config
+                </div>
+              </li>
+              <li>
+                <div class="menu-item" (click)="toggleMenu($event)">
+                  Customization
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <div class="menu-item" (click)="toggleMenu($event)">
+          Portfolio
+        </div>
+      </li>
+      <li>
+        <div class="menu-item" (click)="toggleMenu($event)">
+          Shop
+        </div>
+      </li>
+      <li>
+        <div class="menu-item" (click)="toggleMenu($event)">
+          Recipes
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <button (click)="toggleSidebar()">Toggle Sidebar</button>
 
-<hr>
+</aside>
 
-<router-outlet></router-outlet>
+<header class="header">
+  <div class="breadcrumbs">Portfolio / Example</div>
+  <div class="header-toolbar">
+    <button class="header-toolbar__button">
+      <img ngSrc="../assets/images/svg/header/contacts.svg" alt="Contacts" height="24" width="24">
+    </button>
+    <button class="header-toolbar__button">
+      <img ngSrc="../assets/images/svg/header/languages/eng.svg" alt="English" height="24" width="24">
+    </button>
+    <button class="header-toolbar__button" (click)="toggleTheme()">
+      <img ngSrc="../assets/images/svg/header/theme.svg" alt="Theme" height="24" width="24">
+    </button>
+  </div>
+</header>
+<main class="main">
+  <router-outlet></router-outlet>
+</main>

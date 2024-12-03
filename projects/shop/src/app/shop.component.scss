@@ -1,0 +1,17 @@
+:host.light-theme {
+  --color-text-default: var(--shop-light-color-text-default);
+  --color-text-muted: var(--shop-light-color-text-muted);
+  --color-text-accent: var(--shop-light-color-text-accent);
+}
+
+:host.dark-theme {
+  --color-background: #1a202c;
+  --color-text-default: var(--shop-dark-color-text-default);
+  --color-text-muted: var(--shop-dark-color-text-muted);
+  --color-text-accent: var(--shop-dark-color-text-accent);
+}
+
+h1{
+  color: var(--shop-dark-color-text-accent);
+}
+

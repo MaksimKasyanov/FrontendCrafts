@@ -1,0 +1,24 @@
+:host.light-theme {
+  --color-bg-default: #e0e0e0;
+  --color-text-default: var(--recipes-light-color-text-default);
+  --color-text-muted: var(--recipes-light-color-text-muted);
+  --color-text-accent: var(--recipes-light-color-text-accent);
+
+}
+
+:host.dark-theme {
+  --color-background: #1a202c;
+  --color-bg-default: #383838;
+  --color-text-default: var(--recipes-dark-color-text-default);
+  --color-text-muted: var(--recipes-dark-color-text-muted);
+  --color-text-accent: var(--recipes-dark-color-text-accent);
+}
+
+h1{
+  color: var(--color-text-default);
+  background-color: var(--color-bg-default);
+  transition: var(--transition-default);
+}
+
+
+
