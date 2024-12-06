@@ -15,12 +15,12 @@
         <ul>
           <li>
             <div class="menu-item" (click)="toggleMenu($event)">
-              Introduction
+              <a routerLink="/documentation" routerLinkActive="active">Documentation</a>
             </div>
           </li>
           <li>
             <div class="menu-item" (click)="toggleMenu($event)">
-              Setup
+              <a routerLink="/nucleus" routerLinkActive="active">Nucleus</a>
             </div>
           </li>
         </ul>
@@ -66,7 +66,7 @@
       </li>
       <li>
         <div class="menu-item" (click)="toggleMenu($event)">
-          Recipes
+          <a routerLink="/recipes" routerLinkActive="active">Recipes</a>
         </div>
       </li>
     </ul>

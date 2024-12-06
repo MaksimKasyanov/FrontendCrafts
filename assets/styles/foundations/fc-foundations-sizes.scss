@@ -1,15 +1,24 @@
+
 /* Sizes */
-@mixin generate-sizes($base-size, $start: 1, $max, $step: 1) {
+@mixin generate-sizes($prefix, $base-size, $start: 1, $max, $step: 1) {
   $i: $start;
   @while $i <= $max {
-    --size-#{$i}: calc(#{$base-size} * #{$i});
+    --#{$prefix}-#{$i}: calc(#{$base-size} * #{$i});
     $i: $i + $step;
   }
 }
 
 :root {
-  @include generate-sizes(0.0625rem, 1, 32, 1);
-  @include generate-sizes(0.0625rem, 36, 64, 4);
-  @include generate-sizes(0.0625rem, 72, 96, 8);
-  @include generate-sizes(0.0625rem, 120, 640, 40);
+  /* sizes */
+  @include generate-sizes(size, 0.0625rem, 1, 1, 1);
+  @include generate-sizes(size, 0.0625rem, 2, 32, 2);
+  @include generate-sizes(size, 0.0625rem, 36, 64, 4);
+  @include generate-sizes(size, 0.0625rem, 72, 96, 8);
+  @include generate-sizes(size, 0.0625rem, 120, 640, 40);
+
+  /* spaces */
+  @include generate-sizes(space, 0.0625rem, 2, 24, 2);
+
+  /* gaps */
+  @include generate-sizes(gap, 0.0625rem, 4, 48, 4);
 }

@@ -66,10 +66,10 @@
 
 
 .aside {
-  width: var(--aside-width, 250px);
   background-color: #f8f9fa;
   padding: 1rem;
   transition: all var(--transition-default);
+  overflow: hidden;
   nav ul {
     list-style: none;
     padding: 0;

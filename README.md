@@ -12,6 +12,18 @@ Feel free to connect on [LinkedIn](https://www.linkedin.com/in/maksim-kasyanov-4
 
 ---
 
+## Roadmap
+
+### Foundations
+
+1. Design
+2. Styles
+
+
+
+
+---
+
 ## Guide
 
 1. [Quick start](#title1)
