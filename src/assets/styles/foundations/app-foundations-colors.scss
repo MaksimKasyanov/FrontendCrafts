@@ -1,0 +1,6 @@
+@import "../../../../assets/styles/mixins/fc-mixins-colors";
+
+@include generate-light-theme-text(app, #E2E8F0, 10%, #5EEAD4);
+@include generate-light-theme-backgrounds(app, #ffffff, #f8f9fa, #e0f7fa);
+@include generate-dark-theme-text(app, #212121, 10%, #5EEAD4);
+@include generate-dark-theme-backgrounds(app, #121212, #1e1e1e, #263238);

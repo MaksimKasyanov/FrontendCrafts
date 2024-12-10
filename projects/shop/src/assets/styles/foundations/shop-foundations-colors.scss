@@ -1,0 +1,4 @@
+@import "../../../../../../assets/styles/mixins/fc-mixins-colors";
+
+@include generate-light-theme-text(shop, #E2E8F0, 10%, #E86C00);
+@include generate-dark-theme-text(shop, #212121, 10%, #E86C00);

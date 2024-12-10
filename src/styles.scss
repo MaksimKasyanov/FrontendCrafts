@@ -1,3 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../assets/styles/core";
-@import "./assets/styles/styles";
+@import "assets/styles/main";
+@import "../projects/recipes/src/styles";
+@import "../projects/shop/src/styles";

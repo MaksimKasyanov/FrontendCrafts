@@ -1,0 +1,4 @@
+@import "../../../../../../assets/styles/mixins/fc-mixins-colors";
+
+@include generate-light-theme-text(recipes, #212121, 10%, #5E38BA);
+@include generate-dark-theme-text(recipes, #E2E8F0, 10%, #5E38BA);
