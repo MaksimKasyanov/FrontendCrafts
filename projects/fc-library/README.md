@@ -30,74 +30,86 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ---
 
-### I. General Components
+## I. Elements
+#### 1. Text Elements
 - [ ] 1 Anchor (Link)
-- [ ] 2 Button
-- [ ] 3 Divider
-- [ ] 4 Typography
+- [ ] 2 Label
+- [ ] 3 Typography
 
-### II. Input & Form Components
+#### 2. Form Elements
+- [ ] 4 Button
 - [ ] 5 Checkbox
-- [ ] 6 Color Picker
-- [ ] 7 Date Picker
-- [ ] 8 Form
-- [ ] 9 Input
-- [ ] 10 Radio Button
-- [ ] 11 Radio Buttons Wrapper
+- [ ] 6 Input
+- [ ] 7 Radio Button
+- [ ] 8 Radio Buttons Wrapper
+- [ ] 9 Select
+- [ ] 10 Color Picker
+- [ ] 11 Time Picker
 - [ ] 12 Rate
-- [ ] 13 Select
-- [ ] 14 Time Picker
 
-### III. Data Display Components
-- [ ] 15 Select
-- [ ] 16 Time Picker
-- [ ] 17 Typography
-- [ ] 18 Accordion
-- [ ] 19 Alerts
-- [ ] 20 Badge
-- [ ] 21 Card
-- [ ] 22 Divider
-- [ ] 23 Gallery/Grid View
-- [ ] 24 Image
-- [ ] 25 Image Viewer
-- [ ] 26 List
+#### 3. Status Indicators
+- [ ] 13 Badge
+- [ ] 14 Progress Bar
+- [ ] 15 Skeleton
+- [ ] 16 Tag/Chip
 
 
-### IV. Navigation & Structural Components
-- [ ] 27 Progress Bar
-- [ ] 28 Skeleton
-- [ ] 29 Table
-- [ ] 30 Tag/Chip
-- [ ] 31 Tooltip
-- [ ] 32 Video
-- [ ] 33 Breadcrumbs
-- [ ] 34 Navbar
-- [ ] 35 Pagination
-- [ ] 36 Sidebar
-- [ ] 37 Tabs
+#### 4. Utility Elements
+- [ ] 17 Close
+- [ ] 18 Collapse
+- [ ] 19 Divider
 
-### V. Visibility & Interaction Components
-- [ ] 38 Drawer
-- [ ] 39 Modal
-- [ ] 40 Toast/Notification
-- [ ] 41 Carousel
-- [ ] 42 Data Grid
-- [ ] 43 Filter Panel
+---
+
+## II. Components
+#### 1. Utility Elements
+- [ ] 20 Accordion
+- [ ] 21 Alerts
+- [ ] 22 Drawer
+- [ ] 23 Modal
+- [ ] 24 Tabs
+- [ ] 25 Toast/Notification
+
+#### 2. Data Display Components
+- [ ] 26 Card
+- [ ] 27 Data Grid
+- [ ] 28 Gallery/Grid View
+- [ ] 29 Image
+- [ ] 30 Image Viewer
+- [ ] 31 List
+- [ ] 32 Table
+- [ ] 33 Tree View
+- [ ] 34 Video
+
+#### 3. Form Components
+- [ ] 35 Filter Panel
+- [ ] 36 Form
+- [ ] 37 Multi-Step Form
+- [ ] 38 Search with Autocomplete
+
+#### 4. Advanced Components
+- [ ] 39 Carousel
+- [ ] 40 Rich Text Editor
+
+---
+
+## III. Structure
+#### 1. Page Layout
+- [ ] 41 Aside
+- [ ] 42 Header
+- [ ] 43 Footer
+- [ ]	44 Main
+- [ ]	45 Layout Wrapper
 
 
-### VI. Advanced & Specialized Components
-- [ ]	44 Carousel
-- [ ]	45 Data Grid
-- [ ]	46 Filter Panel
-- [ ]	47 Kanban Board
-- [ ]	48 Multi-Step Form
-- [ ]	49 Rich Text Editor
-- [ ]	50 Search with Autocomplete
-- [ ]	51 Tree View
+#### 2. Navigation
+- [ ]	46 Breadcrumbs
+- [ ]	47 Navbar
+- [ ]	48 Pagination
+- [ ]	49 Sidebar
 
-### VII. System Components
-- [ ] 52 Loader Wrapper
-- [ ] 53 Portal/Overlay Manager
-- [ ] 54 Theme Switcher
+#### 2. Navigation
+- [ ]	50 Drawer
+- [ ]	51 Modal
 
 ---
